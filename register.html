@@ -14,39 +14,50 @@
             
             <br />
 
-            <form action="login.html">
+            <form action = "login.html">
                 <input
                     type = "text"
                     id = "email"
                     name = "email"
                     placeholder = "email"
+                    pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+
                 />
 
                 <br />
 
                 <input
-                    type = "text"
+                    type = "password"
                     id = "password"
                     name = "password"
                     placeholder = "password"
+                    required
                 />
 
                 <br />
 
                 <input
-                    type = "text"
+                    type = "password"
                     id = "repeatPassword"
                     name = "repeatPassword"
                     placeholder = "repeat password"
+                    onchange="check_pass()"
+                    required
                 />
 
                 <br />
 
-                <!-- <div class="centerElement"> -->
-                    <button>sign up</button>
-                <!-- </div> -->
+                <!--<input
+                    id = "signUp"
+                    type = "submit"
+                />-->
+
+                <div class="centerElement">
+                    <button id = "signUp" type = "submit">sign up</button>
+                </div>
             </form>
         </div>
     </div>
+    <script src = "register.js"></script>
 </body>
 </html>

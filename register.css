@@ -95,3 +95,9 @@ input:focus{
     box-sizing: border-box;
     width:100%;
 }
+
+/*table{
+    width: 100%;
+    table-layout: fixed;
+    word-break: break-word;
+  }*/
